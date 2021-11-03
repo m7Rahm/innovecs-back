@@ -1,0 +1,31 @@
+# Logfile created on 2021-11-04 01:58:33 +0400 by logger.rb/47272
+I, [2021-11-04T01:58:42.457987 #15776]  INFO -- : Running example 'Verifying a pact between Consumer and Provider A request to list all todos with GET /todos returns a response which has status code 200'
+I, [2021-11-04T01:58:42.457987 #15776]  INFO -- : Sending GET request to path: "/todos" with headers: {}, see debug logs for body
+D, [2021-11-04T01:58:42.457987 #15776] DEBUG -- : body :
+I, [2021-11-04T01:58:42.520605 #15776]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"4", "Content-Type"=>"application/json; charset=utf-8", "Date"=>"Wed, 03 Nov 2021 21:58:42 GMT"}, see debug logs for body
+D, [2021-11-04T01:58:42.521907 #15776] DEBUG -- : body: null
+I, [2021-11-04T01:58:42.521907 #15776]  INFO -- : Running example 'Verifying a pact between Consumer and Provider A request to add todo with POST /todo returns a response which has status code 201'
+I, [2021-11-04T01:58:42.521907 #15776]  INFO -- : Sending POST request to path: "/todo" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type"}, see debug logs for body
+D, [2021-11-04T01:58:42.521907 #15776] DEBUG -- : body :{"todo":"abc"}
+I, [2021-11-04T01:58:42.552157 #15776]  INFO -- : Received response with status: 201, headers: {"Access-Control-Allow-Headers"=>"Origin, X-Requested-With, Content-Type, Accept", "Access-Control-Allow-Methods"=>"*", "Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Content-Type"=>"application/json; charset=utf-8", "Date"=>"Wed, 03 Nov 2021 21:58:42 GMT"}, see debug logs for body
+D, [2021-11-04T01:58:42.553775 #15776] DEBUG -- : body: 
+I, [2021-11-04T02:00:38.353312 #12800]  INFO -- : Running example 'Verifying a pact between Consumer and Provider A request to list all todos with GET /todos returns a response which has status code 200'
+I, [2021-11-04T02:00:38.353312 #12800]  INFO -- : Sending GET request to path: "/todos" with headers: {}, see debug logs for body
+D, [2021-11-04T02:00:38.353312 #12800] DEBUG -- : body :
+I, [2021-11-04T02:00:38.444700 #12800]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"4", "Content-Type"=>"application/json; charset=utf-8", "Date"=>"Wed, 03 Nov 2021 22:00:38 GMT"}, see debug logs for body
+D, [2021-11-04T02:00:38.444700 #12800] DEBUG -- : body: null
+I, [2021-11-04T02:00:38.445698 #12800]  INFO -- : Running example 'Verifying a pact between Consumer and Provider A request to add todo with POST /todo returns a response which has status code 201'
+I, [2021-11-04T02:00:38.445698 #12800]  INFO -- : Sending POST request to path: "/todo" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type"}, see debug logs for body
+D, [2021-11-04T02:00:38.445698 #12800] DEBUG -- : body :{"todo":"abc"}
+I, [2021-11-04T02:00:38.476048 #12800]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Headers"=>"Origin, X-Requested-With, Content-Type, Accept", "Access-Control-Allow-Methods"=>"*", "Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Content-Type"=>"application/json; charset=utf-8", "Date"=>"Wed, 03 Nov 2021 22:00:38 GMT"}, see debug logs for body
+D, [2021-11-04T02:00:38.476878 #12800] DEBUG -- : body: 
+I, [2021-11-04T02:01:37.483329 #20952]  INFO -- : Running example 'Verifying a pact between Consumer and Provider A request to list all todos with GET /todos returns a response which has status code 200'
+I, [2021-11-04T02:01:37.498963 #20952]  INFO -- : Sending GET request to path: "/todos" with headers: {}, see debug logs for body
+D, [2021-11-04T02:01:37.498963 #20952] DEBUG -- : body :
+I, [2021-11-04T02:01:37.546243 #20952]  INFO -- : Received response with status: 200, headers: {"Access-Control-Allow-Origin"=>"*", "Content-Length"=>"4", "Content-Type"=>"application/json; charset=utf-8", "Date"=>"Wed, 03 Nov 2021 22:01:37 GMT"}, see debug logs for body
+D, [2021-11-04T02:01:37.547154 #20952] DEBUG -- : body: null
+I, [2021-11-04T02:01:37.547686 #20952]  INFO -- : Running example 'Verifying a pact between Consumer and Provider A request to add todo with POST /todo returns a response which has status code 201'
+I, [2021-11-04T02:01:37.547686 #20952]  INFO -- : Sending POST request to path: "/todo" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type"}, see debug logs for body
+D, [2021-11-04T02:01:37.547686 #20952] DEBUG -- : body :{"todo":"abc"}
+I, [2021-11-04T02:01:37.578083 #20952]  INFO -- : Received response with status: 201, headers: {"Access-Control-Allow-Headers"=>"Origin, X-Requested-With, Content-Type, Accept", "Access-Control-Allow-Methods"=>"*", "Access-Control-Allow-Origin"=>"*", "Content-Length"=>"0", "Content-Type"=>"application/json; charset=utf-8", "Date"=>"Wed, 03 Nov 2021 22:01:37 GMT"}, see debug logs for body
+D, [2021-11-04T02:01:37.579724 #20952] DEBUG -- : body: 
