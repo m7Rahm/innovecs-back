@@ -4,8 +4,10 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"os"
 	"testing"
 
+	"github.com/joho/godotenv"
 	"github.com/pact-foundation/pact-go/dsl"
 	"github.com/pact-foundation/pact-go/types"
 )
@@ -18,6 +20,7 @@ func startServer() {
 	log.Fatalf("%v", http.ListenAndServe(fmt.Sprintf(":%v", port), nil))
 }
 func TestVerifyContracts(t *testing.T) {
+	godotenv.Load()
 	go startServer()
 	pact := &dsl.Pact{
 		Provider:                 "Provider",
@@ -28,9 +31,7 @@ func TestVerifyContracts(t *testing.T) {
 		BrokerURL:                  "https://rmustafayev.pactflow.io",
 		PublishVerificationResults: true,
 		ProviderVersion:            "1.0.0",
-		// BrokerUsername:  os.Getenv("PACT_BROKER_USERNAME"),
-		// BrokerPassword:  os.Getenv("PACT_BROKER_PASSWORD"),
-		BrokerToken: "TyYlTIWwq24QPXZrwH6NUQ",
+		BrokerToken:                os.Getenv("PACT_BROKER_TOKEN"),
 	})
 	if err != nil || t.Failed() {
 		log.Fatalf("%v", err)
