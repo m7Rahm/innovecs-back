@@ -16,8 +16,8 @@ import (
 const port int32 = 4000
 
 func startServer() {
-	http.HandleFunc("/todos", GetToDos)
-	http.HandleFunc("/todo", PostToDo)
+	http.HandleFunc("/api/todos", GetToDos)
+	http.HandleFunc("/api/todo", PostToDo)
 	log.Fatalf("%v", http.ListenAndServe(fmt.Sprintf(":%v", port), nil))
 }
 func TestVerifyContracts(t *testing.T) {

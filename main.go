@@ -86,8 +86,7 @@ func main() {
 		log.Fatalf("unable to read file2 %v", err)
 		return
 	}
-	http.Handle("/", http.FileServer(http.Dir("static/build")))
-	http.HandleFunc("/todos", GetToDos)
-	http.HandleFunc("/todo", PostToDo)
+	http.HandleFunc("/api/todos", GetToDos)
+	http.HandleFunc("/api/todo", PostToDo)
 	log.Fatalf("%v", http.ListenAndServe(":4000", nil))
 }
